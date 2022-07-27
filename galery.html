@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yardımlaşalım</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style>
+        body{background: url(kemik.png);background-size: cover;background-repeat: no-repeat;}
+        .navbar{background: url(kedi.png);height: 200px;width: 800px;margin: auto;background-repeat: round;background-size: cover;padding-top: 50px;border-radius: 20px;margin-top: 5px;}
+        .navbar a{color: beige;font-size: 50px;margin-left: 150px;}
+        .navbar h1{font-size: 40px;color: chartreuse;margin-left: 100px;}
+        .open{color: black;font-size: 50px;margin-left: 50px;margin-top: 30px;cursor: pointer;}
+        .bottom{background-color: green;width: 800px;height: 50px;margin: auto;top: 0px;text-align: center;}
+        .bottom p{font-size: 25px;color: black;}
+        .sidebar{position: fixed; height: 100%;width: 0px;top: 0px;left: 0px;background-color: azure;padding-top: 70px;transition: 1s;overflow-x: hidden;}
+        .sidebar a{display: block; font-size: 20px;text-decoration: none;line-height: 50px;margin-left: 10px;margin-left: 30px;color: green;transition: 0.5s;}
+        .sidebar h1{position: absolute; top: 0px;left: 180px;font-size: 30px;color: black;cursor: pointer;}
+        .sidebar a:hover{margin-left: 20px;}
+        .mains{height: 2000px;width: 800px;margin: auto;background-color: azure;padding-top: 20px;padding-left: 30px;}
+        .mains img{height: 500px;width: 500px;}
+    </style>
+</head>
+<body>
+    <h1 onclick="f()" class="open">&#9776;</h1>
+    <div class="sidebar" id="sidebar">
+        <h1 onclick="g()">&times;</h1>
+        <a href="main.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+        <a href="contact.html"><i class="fa fa-phone" aria-hidden="true"></i>contact</a>
+        <a href="about.html"><i class="fa fa-user" aria-hidden="true"></i>About</a>
+        <a href="galery.html"><i class="fa fa-camera" aria-hidden="true"></i>Galery</a>
+    </div>
+    <div class="navbar">
+        <h1>We are making the world better place</h1>
+        <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+    </div>
+    <div class="mains">
+       <img src="k1.png">
+       <img src="k2.png">
+       <img src="k3.png">
+       <img src="k4.png">
+    </div>
+    <div class="bottom">
+        <p>Ek Bilgiler İçin Yardım.com a gidebilirsiniz</p>
+    </div>
+    <script>
+        function f(){
+            var a=document.getElementById("sidebar")
+            a.style.width="250px"
+        }
+        function g(){
+            var a=document.getElementById("sidebar")
+            a.style.width="0px"
+        }
+    </script>
+</body>
+</html>
